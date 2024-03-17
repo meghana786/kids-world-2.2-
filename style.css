@@ -1,177 +1,196 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-body {
-  font-family: "Rubik", sans-serif;
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 100px;
+    height: 50px;
+    width: 100%;
 }
-
-.books {
-  max-width: 200px;
+.icon img{
+    margin-top: 10px;
+    margin-left: 25px;
+    height: 30px;
 }
-
-.games,
-.crafts {
-  max-width: 300px;
+.cart-items img{
+    margin-top: 5px;
+    height: 30px;
 }
-
-.flex {
-  display: flex;
+.cart-items{
+    align-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 60px;
+    align-content: center;
 }
-
-.section-container {
-  flex-direction: column;
-  padding: 5%;
+ 
+.home{
+    background-image:url("kw-background.png");
+    background-size: 100% 100%;
+    height: 400px;
+    width: 100%;
 }
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
+.test-container{
+    color: white;
+    align-content: center;
+    padding: 60px;
+    flex-direction: column;
+    font-size: 25px;
 }
-
-.space-evenly {
-  justify-content: space-evenly;
+.section{
+     margin: 4% 0%;
+    padding:40px 60px 30px 60px ;
 }
-
-nav {
-  height: 50px;
-  width: 100%;
+.heading{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
 }
-
-nav>div {
-  padding: 0% 5%;
+.book-container{
+    display: flex;
+    justify-content: space-between;
 }
-
-nav img {
-  height: 30px;
+.books{
+    justify-content: space-between;
+    align-content: center;
 }
-
-#cart {
-  font-weight: bold;
-  align-items: center;
+.book-img{
+    width: 150px;
 }
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("kw-background.png");
-  background-size: 100% 100%;
-  color: white;
+.name{
+    font-weight: 17px;
+    font-weight: bold;
 }
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
+.author{
+    color: gray;
+    font-size: 15px;
+    padding: 7px;
 }
-
-header h1 {
-  font-size: 7vh;
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
+.button{
+    background-color: #6095ff;
+    border: #6095ff;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
 }
-
-.section {
-  margin: 4% 0%;
+.amt{
+    font-weight:bolder;
+    font-size: 17px;
 }
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
+.buy img{
+    width: 20px;
+    padding-left: 5px;
 }
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
+.heading{
+    margin-bottom: 10px;
 }
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
+.games-section{
+    margin: 4% 0%;
 }
-
-footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
+.game-container{
+    display: flex;
+    justify-content: space-between;
 }
-
-footer img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+.game-img{
+    width: 250px;
 }
-
-#details {
-  flex-direction: column;
-  text-align: right;
+.handmade-section
+{
+    margin: 4% 0%;
 }
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+.handmade-container{
+    display: flex;
+    justify-content: space-between;
 }
-
-h4 {
-  color: grey;
-  font-weight: lighter;
+.handmade-img{
+    width: 250px;
 }
-
-h6 {
-  font-size: 17px;
+.footer{
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    color: white;
 }
-
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
+.footer img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
-
-h3,
-h2 {
-  margin-bottom: 10px;
+.profile{
+    margin-left: 50px;
 }
-
-.container {
-  flex-wrap: wrap;
+.kristi{
+        flex-direction: column;
+        text-align: right; 
+        padding: 50px 40px 20px;
 }
-
 @media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
-  }
+    .icon img{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        height: 20px;
+    }
+    .cart-items img{
+        margin-top: 0px;
+        height: 20px;
+    }
+    .test-container{
+        color: white;
+        align-content: center;
+        padding: 40px;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .section{
+         margin: 0% 0%;
+        padding:opx ;
+    }
+    .home{
+        background-size: 100% 100%;
+        height: 200px;
+        width: 100%;
+    }
+    .section{
+       padding:0px;
+       margin: 0px;
+       justify-content: center;
+   }
+   .book-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .game-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .handmade-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .profile{
+        margin-left: 0px;
+    }
+    .kristi{
+            flex-direction: column;
+            text-align: right; 
+            margin-left: 10px;
+            align-items: center;
+    }
 
-  header h1 {
-    font-size: 4vh;
-  }
-
-  header h5 {
-    font-size: 15px;
-  }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  .container {
-    justify-content: center;
-  }
 }
